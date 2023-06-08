@@ -5,6 +5,11 @@ import Particles from "react-particles";
 import {loadFull} from "tsparticles";
 import {Slide, Fade} from 'react-reveal';
 
+import {Button} from "@mui/material";
+import {Download, Send} from "@mui/icons-material";
+import Typist from 'react-typist';
+import Typed from "react-typed"
+
 
 function Banner() {
     const particlesInit = useCallback(async engine => {
@@ -26,9 +31,21 @@ function Banner() {
             <Fade bottom>
                 <div className="banner__container">
                     <div className="banner__container__info">
-                        <div className="banner__container__subtitle">hello, I am ,</div>
+                        <div className="banner__container__subtitle">hello, my name is</div>
+
                         <div className="banner__container__title">Isuru Senanayake</div>
-                        <div className="banner__container__title__2">I build amazing websites!</div>
+
+
+                        <div className="banner__container__title__2"><Typed
+                            strings={[
+                                "I'm a Full Stack Developer .",
+                                "I am an Undergraduate Student . ",
+                                "I build things for Web .",
+                            ]}
+                            typeSpeed={150}
+                            backSpeed={20}
+                            loop
+                        /></div>
                         <p className="banner__container__title__description">I am a highly motivated and skilled
                             fullstack
                             developer student currently pursuing my BSc in Software Engineering. .I have experience
@@ -37,8 +54,9 @@ function Banner() {
                             a variety of programming languages and frameworks</p>
                     </div>
                     <div className="banner__container__buttons">
-                        <button className="banner__container__button__1">Reach out to me !</button>
-                        <button className="banner__container__button__2">Download Cv</button>
+                        <Button className="banner__container__button ">Reach out to me <Send
+                            fontSize={"small"}/></Button>
+                        <Button className="banner__container__button ">Download Cv <Download/></Button>
                     </div>
                 </div>
             </Fade>
@@ -83,7 +101,7 @@ function Banner() {
                             }, random: false, speed: 1, straight: false,
                         }, number: {
                             density: {
-                                enable: true, area: 1500,
+                                enable: true, area: 1000,
                             }, value: 80,
                         }, opacity: {
                             value: 0.4,

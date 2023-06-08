@@ -63,28 +63,38 @@
 }
 
 .banner__container__buttons {
-    /*margin-top: 16px;*/
-    /*background: red;*/
+    display: flex;
+
 
 }
 
-.banner__container__button__1,
-.banner__container__button__2 {
-    padding: 8px 20px;
-    font-size: 16px;
-    color: rgba(153, 226, 230);
-    background-color: transparent;
+.banner__container__button{
+    /*padding: 8px 20px!important;*/
+    display: flex!important;
+    align-items: center!important;
+    gap: 5px!important;
+    font-size: 13px!important;
+    color: rgba(153, 226, 230)!important;
+    background-color: transparent!important;
 
-    border-radius: 6px;
-    cursor: pointer;
-    margin-right: 10px;
-    border: 1px solid rgba(153, 226, 230, 0.7);
+    border-radius: 6px!important;
+
+    margin-right: 10px!important;
+    border: 1px solid rgba(153, 226, 230, 0.7)!important;
     transition: all 0.2s  ease-in;
 }
 
-.banner__container__button__1:hover,
-.banner__container__button__2:hover {
-    background-color: rgba(153, 226, 230, 0.3);
-    color: white;
+.banner__container__button:hover{
+    background-color: rgba(153, 226, 230, 0.2)!important;
+    color: white!important;
 
 }
+.fiiled {
+    background-color: rgba(153, 226, 230, 0.8) !important;
+    color: black!important;
+
+}
+/*.fiiled:hover {*/
+/*     background-color: transparent !important;*/
+/*    color: rgba(153, 226, 230)!important;*/
+/*}*/
