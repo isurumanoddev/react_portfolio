@@ -1,26 +1,39 @@
-@font-face {
- font-family: "Sora";
- src: local("Sora"),
-  url("./fonts/Sora-Regular.ttf") format("truetype");
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
 
- /*font-weight: bold;*/
-}
+/*font-weight: bold;*/
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
 
 
 }
+
+:root {
+    --color-bg: rgb(10, 16, 41);
+    --color-primary: rgb(153, 226, 230);
+    --font-color: rgb(210, 217, 244);
+
+
+}
+
 body::-webkit-scrollbar {
     display: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: rgb(10, 16, 41);
-    color: rgb(210, 217, 244);
+    color: var(--font-color);
+    background: var(--color-bg);
+
 
     margin: 0;
-    font-family: Sora, "serif";
+    font-family: 'Sora', sans-serif;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -30,3 +43,12 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container {
+    max-width: 1200px;
+    /*max-width: 1202px;*/
+
+    margin: 0 auto;
+
+}
+

@@ -15,7 +15,7 @@
 .header__dark {
 
 
-    background-color: rgba(10, 16, 41,0.95);
+    background-color: var(--color-bg);
 
 
 
@@ -48,8 +48,8 @@ a {
 
 }
 .active {
-     color: rgb(153, 226, 230) !important;
-    border-bottom: 2px solid  rgb(153, 226, 230);
+     color: var(--color-primary) !important;
+    border-bottom: 2px solid  var(--color-primary);
 
 
 
@@ -69,6 +69,6 @@ a {
 
 .header__nav-item a:hover {
 
-    color: rgb(153, 226, 230);
+    color: var(--color-primary);
 
 }

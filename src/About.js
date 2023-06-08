@@ -1,17 +1,16 @@
 import React from 'react';
 import "./About.css"
 import {Slide, Fade} from 'react-reveal';
+import Title from "./Title";
 
 function About() {
     return (
 
 
-        <div className="about">
-            <Fade left>
-                <h2 className="section-title">About</h2>
-            </Fade>
-            <span className="section-subtitle">My Introduction</span>
-            <div className="about-container container">
+        <div className="about container">
+           <Title title={"About"} subTitle={"My Introduction"}/>
+
+            <div className="about-container">
 
                 <Fade bottom>
                     <p className="about-description">Highly motivated, open-mined and detail-oriented undergraduate

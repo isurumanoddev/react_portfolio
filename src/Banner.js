@@ -49,8 +49,7 @@ function Banner() {
                             loop
                         /></div>
                         <p className="banner__container__title__description">I am a highly motivated and skilled
-                            fullstack
-                            developer student currently pursuing my BSc in Software Engineering. .I have experience
+                            <strong className="banner__container__title__description__colored"> Fullstack Developer Student </strong> currently pursuing my BSc in Software Engineering. .I have experience
                             working
                             with
                             a variety of programming languages and frameworks</p>
