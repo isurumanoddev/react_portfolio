@@ -11,6 +11,8 @@ import Typist from 'react-typist';
 import Typed from "react-typed"
 
 
+
+
 function Banner() {
     const particlesInit = useCallback(async engine => {
         console.log(engine);
@@ -39,7 +41,7 @@ function Banner() {
                         <div className="banner__container__title__2"><Typed
                             strings={[
                                 "I'm a Full Stack Developer .",
-                                "I am an Undergraduate Student . ",
+                                "I'm an Undergraduate Student . ",
                                 "I build things for Web .",
                             ]}
                             typeSpeed={150}
@@ -56,7 +58,7 @@ function Banner() {
                     <div className="banner__container__buttons">
                         <Button className="banner__container__button ">Reach out to me <Send
                             fontSize={"small"}/></Button>
-                        <Button className="banner__container__button ">Download Cv <Download/></Button>
+                        <Button className="banner__container__button ">Download Cv <Download fontSize={"small"}/></Button>
                     </div>
                 </div>
             </Fade>

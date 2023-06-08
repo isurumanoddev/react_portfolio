@@ -14,7 +14,8 @@
 }
 .header__dark {
 
-    background: rgba(0,0,22,0.9);
+
+    background-color: rgba(10, 16, 41,0.95);
 
 
 
@@ -40,8 +41,9 @@ a {
 .header__nav-item {
     cursor: pointer;
   margin: 0 20px;
-    font-weight:500 ;
+    font-size: 15px;
     padding: 8px 0;
+    font-family: Sora, "serif";
 
 
 }
