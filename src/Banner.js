@@ -55,9 +55,9 @@ function Banner() {
                             a variety of programming languages and frameworks</p>
                     </div>
                     <div className="banner__container__buttons">
-                        <Button className="banner__container__button ">Reach out to me <Send
+                        <Button className="button ">Reach out to me <Send
                             fontSize={"small"}/></Button>
-                        <Button className="banner__container__button ">Download Cv <Download fontSize={"small"}/></Button>
+                        <Button className="button ">Download Cv <Download fontSize={"small"}/></Button>
                     </div>
                 </div>
             </Fade>

@@ -52,3 +52,53 @@ code {
 
 }
 
+.button {
+    /*padding: 8px 20px!important;*/
+    display: flex !important;
+    align-items: center !important;
+    gap: 5px !important;
+    font-size: 13px !important;
+    color: rgba(153, 226, 230) !important;
+    background-color: transparent !important;
+
+    border-radius: 6px !important;
+
+    margin-right: 10px !important;
+    border: 1px solid rgba(153, 226, 230, 0.7) !important;
+    transition: all 0.2s ease-in;
+}
+
+.button:hover {
+    background-color: rgba(153, 226, 230, 0.2) !important;
+    color: white !important;
+
+}
+
+/*@media screen and (max-width: 1024px){*/
+/*.container {*/
+
+/*}*/
+@media screen and (max-width: 992px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 40px;
+        padding: 0 10px;
+
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+
+
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+
+    }
+}
