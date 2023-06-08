@@ -1,0 +1,90 @@
+
+.banner {
+
+    height: 100vh;
+    /*color: rgb(153, 226, 230);*/
+    display: grid;
+    place-items: center;
+
+}
+
+
+.banner__container {
+    background-color: transparent;
+    padding:30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    max-width: 1300px;
+    margin: 0 auto;
+    flex-direction: column;
+
+    gap: 40px;
+
+    /*background: red;*/
+}
+
+.banner__container__info {
+    margin-top: 100px;
+    flex: 1;
+    width: 100%!important;
+
+}
+
+.banner__container__subtitle {
+    font-size: 30px;
+    color: rgb(153, 226, 230);
+
+
+}
+
+.banner__container__title {
+    font-size: 90px;
+    font-weight: 700;
+
+    margin: 0 0;
+}
+
+.banner__container__title__2 {
+    font-size: 55px;
+
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+.banner__container__title__description {
+    display: flex;
+    justify-content: start;
+    font-size: 16px;
+    opacity: 0.7;
+    line-height: 1.5;
+    width: 50%;
+    /*max-width: 400px;*/
+}
+
+.banner__container__buttons {
+    /*margin-top: 16px;*/
+    /*background: red;*/
+
+}
+
+.banner__container__button__1,
+.banner__container__button__2 {
+    padding: 8px 20px;
+    font-size: 16px;
+    color: rgba(153, 226, 230);
+    background-color: transparent;
+
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 10px;
+    border: 1px solid rgba(153, 226, 230, 0.7);
+    transition: all 0.2s  ease-in;
+}
+
+.banner__container__button__1:hover,
+.banner__container__button__2:hover {
+    background-color: rgba(153, 226, 230, 0.3);
+    color: white;
+
+}

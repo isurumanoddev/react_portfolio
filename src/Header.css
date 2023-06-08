@@ -1,0 +1,15 @@
+.header {
+    z-index: 2;
+    height: 65px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: red;
+    display: flex!important;
+}
+li {
+    list-style: none;
+}
+.header__nav {
+  display: flex;
+}
