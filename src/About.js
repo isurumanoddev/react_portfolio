@@ -4,7 +4,7 @@ import {Slide, Fade} from 'react-reveal';
 import Title from "./Title";
 import {Button} from "@mui/material";
 import {Download} from "@mui/icons-material";
-import CV from "./cv.pdf"
+
 
 function About() {
     const downloadCV = () =>  {
@@ -22,7 +22,7 @@ function About() {
         }
 
     return (
-        <div className="about container">
+        <div className="about container" id={"about"}>
             <Title title={"About"} subTitle={"My Introduction"}/>
 
 

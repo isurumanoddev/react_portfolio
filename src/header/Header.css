@@ -5,63 +5,74 @@
     top: 0;
     width: 100%;
     background: transparent;
-    display: flex!important;
+    display: flex !important;
     gap: 8rem;
     justify-content: flex-end;
     align-items: center;
     padding: 0 40px;
 
 }
+
 .header__dark {
 
 
     background-color: var(--color-bg);
-
+    /*background: rgba(10, 16, 41, 0.44);*/
+    /*    border-radius: 16px;*/
+    /*    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);*/
+    /*    backdrop-filter: blur(5.5px);*/
+    /*    -webkit-backdrop-filter: blur(15.5px);*/
 
 
 }
+
 a {
     text-decoration: none;
     color: inherit;
 }
+
 .header__nav {
-  display: flex;
+    display: flex;
 }
 
 .header__nav {
-  display: flex;
-  justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
 }
+
 
 .header__nav-list {
-  list-style: none;
-  display: flex;
+    list-style: none;
+    display: flex;
+
+    padding-inline-start: 0!important;
+
 }
 
 .header__nav-item {
     cursor: pointer;
-  margin: 0 20px;
+    margin: 0 20px;
     font-size: 15px;
     padding: 8px 0;
     font-family: Sora, "serif";
 
 
 }
+
 .active {
-     color: var(--color-primary) !important;
-    border-bottom: 2px solid  var(--color-primary);
-
-
+    color: var(--color-primary) !important;
+    border-bottom: 2px solid var(--color-primary);
 
 
 }
+
 /*.header__nav-item:hover {*/
 /*    border-bottom: 1px solid rgb(153, 226, 230);;*/
 
 /*}*/
 .header__nav-item a {
 
-  text-decoration: none;
+    text-decoration: none;
     transition: all 0.2s;
 
 
@@ -72,3 +83,32 @@ a {
     color: var(--color-primary);
 
 }
+
+
+@media screen and (max-width: 576px) {
+    .header {
+        z-index: 10;
+        height: 65px;
+        position: fixed;
+
+        top: 15px;
+        width: 100%;
+
+        /* From https://css.glass */
+        /*background: red;*/
+        background: rgba(10, 16, 41, 0.44);
+        border-radius: 8px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5.5px);
+        -webkit-backdrop-filter: blur(5.5px);
+
+        gap: 4rem;
+        justify-content: center;
+        align-items: center;
+        padding: 0 30px;
+
+    }
+
+
+}
+

@@ -47,8 +47,9 @@ code {
 .container {
     max-width: 1200px;
     /*max-width: 1202px;*/
-
+    padding-top: 2px; /*       *************     */
     margin: 0 auto;
+     min-height: 100vh!important;
 
 }
 
@@ -81,10 +82,13 @@ code {
 @media screen and (max-width: 992px) {
     .container {
         display: flex;
-        justify-content: center;
+        max-width: 900px;
+
         flex-direction: column;
         margin: 0 40px;
         padding: 0 10px;
+        height: 100vh;
+         min-height: 100vh!important;
 
 
     }
@@ -92,6 +96,7 @@ code {
 
 @media screen and (max-width: 768px) {
     .container {
+         min-height: 100vh!important;
 
 
     }
@@ -99,6 +104,7 @@ code {
 
 @media screen and (max-width: 576px) {
     .container {
-
+        min-height: 100vh!important;
+        margin: 0 20px;
     }
 }

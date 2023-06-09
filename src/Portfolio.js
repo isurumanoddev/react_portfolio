@@ -4,7 +4,7 @@ import Title from "./Title";
 function Portfolio() {
     return (
 
-        <div className="portfolio">
+        <div className="portfolio container" id={"portfolio"}>
                <Title title={"Portfolio"} subTitle={"My Recent Work"}/>
         </div>
     );

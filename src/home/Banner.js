@@ -5,12 +5,10 @@ import Particles from "react-particles";
 import {loadFull} from "tsparticles";
 import {Slide, Fade} from 'react-reveal';
 
-import {Button} from "@mui/material";
-import {Download, Send} from "@mui/icons-material";
-import Typist from 'react-typist';
+import {Button, IconButton} from "@mui/material";
+import {Download, GitHub, LinkedIn, Send, Twitter} from "@mui/icons-material";
+
 import Typed from "react-typed"
-
-
 
 
 function Banner() {
@@ -29,7 +27,7 @@ function Banner() {
 
     return (
 
-        <div className="banner">
+        <div className="banner" id={"home"}>
             <Fade bottom>
                 <div className="banner__container">
                     <div className="banner__container__info">
@@ -49,7 +47,8 @@ function Banner() {
                             loop
                         /></div>
                         <p className="banner__container__title__description">I am a highly motivated and skilled
-                            <strong className="banner__container__title__description__colored"> Fullstack Developer Student </strong> currently pursuing my BSc in Software Engineering. .I have experience
+                            <strong className="banner__container__title__description__colored"> Software Engineering
+                                Student </strong> currently pursuing my BSc in Software Engineering. .I have experience
                             working
                             with
                             a variety of programming languages and frameworks</p>
@@ -59,7 +58,20 @@ function Banner() {
                             fontSize={"small"}/></Button>
                         <Button className="button ">Download Cv <Download fontSize={"small"}/></Button>
                     </div>
+                    <div className="home__social">
+                        <IconButton href={"https://github.com/isurumanoddev"} className={"home__social__icons"}>
+                            <GitHub  fontSize={"large"}/>
+                        </IconButton>
+                        <IconButton className={"home__social__icons"}>
+                              <LinkedIn fontSize={"large"}/>
+                        </IconButton>
+                        <IconButton className={"home__social__icons"}>
+                            <Twitter fontSize={"large"}/>
+                        </IconButton>
+
+                    </div>
                 </div>
+
             </Fade>
 
 
