@@ -108,7 +108,34 @@ a {
         padding: 0 30px;
 
     }
+    .header__nav {
+    display: flex;
+    justify-content: center;
+}
+
 
 
 }
+
+@media screen and (max-width: 425px) {
+      .header {
+
+        gap: 2rem;
+
+        padding: 0 5px;
+
+    }
+
+    .header__nav-item {
+
+    margin: 0 4px!important;
+    font-size: 13px;
+
+
+
+}
+
+
+}
+
 

@@ -55,6 +55,7 @@ code {
 
 .button {
     /*padding: 8px 20px!important;*/
+    width: max-content!important;
     display: flex !important;
     align-items: center !important;
     gap: 5px !important;
@@ -96,7 +97,7 @@ code {
 
 @media screen and (max-width: 768px) {
     .container {
-         min-height: 100vh!important;
+         /*min-height: 100vh!important;*/
 
 
     }
@@ -104,7 +105,7 @@ code {
 
 @media screen and (max-width: 576px) {
     .container {
-        min-height: 100vh!important;
+        /*min-height: 100vh!important;*/
         margin: 0 20px;
     }
 }

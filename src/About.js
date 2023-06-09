@@ -3,60 +3,59 @@ import "./About.css"
 import {Slide, Fade} from 'react-reveal';
 import Title from "./Title";
 import {Button} from "@mui/material";
-import {Download} from "@mui/icons-material";
+import {Download, MilitaryTech, WorkOutline} from "@mui/icons-material";
 
 
 function About() {
-    const downloadCV = () =>  {
-            const downloadUrl = 'https://drive.google.com/uc?export=download&id=11FzI5kMjslizgvJmRgdGuonbMGF-_UBq'; // Replace with the actual Google Drive file download link
+    const downloadCV = () => {
+        const downloadUrl = 'https://drive.google.com/uc?export=download&id=11FzI5kMjslizgvJmRgdGuonbMGF-_UBq'; // Replace with the actual Google Drive file download link
 
-            // Create a temporary anchor element
-            const link = document.createElement('a');
-            link.href = downloadUrl;
+        // Create a temporary anchor element
+        const link = document.createElement('a');
+        link.href = downloadUrl;
 
-            // Set the file name for the download
-            link.download = 'cv.pdf'; // Replace 'cv.pdf' with the desired file name
+        // Set the file name for the download
+        link.download = 'cv.pdf'; // Replace 'cv.pdf' with the desired file name
 
-            // Simulate a click event to trigger the download
-            link.click();
-        }
+        // Simulate a click event to trigger the download
+        link.click();
+    }
 
     return (
         <div className="about container" id={"about"}>
             <Title title={"About"} subTitle={"My Introduction"}/>
 
 
-            <div className="about-container">
+            <div className="about__container">
 
-                <Fade bottom>
-                    <p className="about-description">Highly motivated, open-mined and detail-oriented undergraduate
-                        software
-                        engineer. An adaptable quick learner, a strong communicator and team player with a strong
-                        foundation
-                        in computer science principles and passion for problem-solving to make a meaningful
-                        contribution at a forward-thinking company. Skilled in developing efficient and intuitive
-                        solutions to complex problems, with experience in a variety of programming languages
-                        such as Python , Javascript , Java and technologies such as Django, NoSQL databases.
-                        Seeking to leverage my skills and knowledge to contribute to the success of a dynamic
-                        software development team
-                    </p>
 
-                    <div className="about-info">
-                        <div>
-                            <span className="about-info-title">1+ Years</span>
-
-                        </div>
-                        <div>
-                            <span className="about-info-title">5+</span>
-
-                        </div>
-
+                <div className="about__me">
+                    <div className="about__me-image">
+                        <img alt="me"/>
                     </div>
-                    <div className="about-button">
-                        <Button  className="button" onClick={downloadCV} type={"submit"} >Download CV
-                            <Download/></Button>
+                </div>
+                <div className="about__content">
+                    <div className="about__cards">
+                        <article className="about__card">
+                            <MilitaryTech fontSize={"large"} className="about__icon"/>
+                            <h5>Experience</h5>
+                            <small>1 year</small>
+                        </article>
+                        <article className="about__card">
+                            <WorkOutline fontSize={"large"} className="about__icon"/>
+                            <h5>Projects</h5>
+                            <small>20+ Completed Projects</small>
+                        </article>
                     </div>
-                </Fade>
+                    <p>I’ve spent the last several months in a remote environment, working with HTML, CSS,
+                        JavaScript, building everything from landing pages to APIs. My experience as a teacher
+                        in an international school helped me collaborate with fellow developers from all over
+                        the world. Additionally, working with kids isn’t an easy task, however, it has helped me
+                        become efficient, productive, and fast even in a very stressful environment, which is an
+                        important skill in the tech industry.</p>
+                    <Button href="" className="button">Download CV <Download/> </Button>
+                </div>
+
 
             </div>
 
