@@ -3,7 +3,7 @@ import "./Banner.css"
 import {useCallback} from "react";
 import Particles from "react-particles";
 import {loadFull} from "tsparticles";
-import {Slide, Fade} from 'react-reveal';
+import {Slide, Fade, Zoom} from 'react-reveal';
 
 import {Button, IconButton} from "@mui/material";
 import {Download, GitHub, LinkedIn, Send, Twitter} from "@mui/icons-material";
@@ -23,56 +23,76 @@ function Banner() {
     const particlesLoaded = useCallback(async container => {
         await console.log(container);
     }, []);
+    const downloadCV = () => {
+        const downloadUrl = 'https://drive.google.com/uc?export=download&id=11FzI5kMjslizgvJmRgdGuonbMGF-_UBq'; // Replace with the actual Google Drive file download link
 
+        // Create a temporary anchor element
+        const link = document.createElement('a');
+        link.href = downloadUrl;
+
+        // Set the file name for the download
+        link.download = 'cv.pdf'; // Replace 'cv.pdf' with the desired file name
+
+        // Simulate a click event to trigger the download
+        link.click();
+    }
 
     return (
 
         <div className="banner" id={"home"}>
-            <Fade bottom>
-                <div className="banner__container">
-                    <div className="banner__container__info">
+
+            <div className="banner__container">
+                <div className="banner__container__info">
+                    <Zoom right cascade>
                         <div className="banner__container__subtitle">hello, my name is</div>
-
+                    </Zoom>
+                    <Zoom right cascade>
                         <div className="banner__container__title">Isuru Senanayake</div>
+                    </Zoom>
 
+                    <div className="banner__container__title__2"><Typed
+                        strings={[
+                            "I'm a Full Stack Developer .",
+                            "I'm an Undergraduate Student . ",
+                            "I build things for Web .",
+                        ]}
+                        typeSpeed={150}
+                        backSpeed={20}
+                        loop
+                    /></div>
 
-                        <div className="banner__container__title__2"><Typed
-                            strings={[
-                                "I'm a Full Stack Developer .",
-                                "I'm an Undergraduate Student . ",
-                                "I build things for Web .",
-                            ]}
-                            typeSpeed={150}
-                            backSpeed={20}
-                            loop
-                        /></div>
-                        <p className="banner__container__title__description">I am a highly motivated and skilled
-                            <strong className="banner__container__title__description__colored"> Software Engineering
-                                Student </strong> currently pursuing my BSc in Software Engineering. .I have experience
-                            working
-                            with
-                            a variety of programming languages and frameworks</p>
-                    </div>
+                    <Zoom right cascade><p className="banner__container__title__description">I am a highly motivated and
+                        skilled<strong className="banner__container__title__description__colored"> Software Engineering
+                            Student </strong> currently pursuing my BSc in Software Engineering. .I have experience
+                        working with a variety of programming languages and frameworks
+                    </p></Zoom>
+
+                </div>
+
+                <Zoom right cascade>
                     <div className="banner__container__buttons">
                         <Button className="button ">Reach out to me <Send
                             fontSize={"small"}/></Button>
-                        <Button className="button ">Download Cv <Download fontSize={"small"}/></Button>
+                        <Button className="button " onClick={downloadCV}>Download Cv <Download
+                            fontSize={"small"}/></Button>
                     </div>
+                </Zoom>
+
+                <Zoom bottom cascade>
                     <div className="home__social">
                         <IconButton href={"https://github.com/isurumanoddev"} className={"home__social__icons"}>
-                            <GitHub  fontSize={"large"}/>
+                            <GitHub fontSize={"large"}/>
                         </IconButton>
                         <IconButton className={"home__social__icons"}>
-                              <LinkedIn fontSize={"large"}/>
+                            <LinkedIn fontSize={"large"}/>
                         </IconButton>
                         <IconButton className={"home__social__icons"}>
                             <Twitter fontSize={"large"}/>
                         </IconButton>
 
                     </div>
-                </div>
-
-            </Fade>
+                </Zoom>
+            </div>
 
 
             <Particles

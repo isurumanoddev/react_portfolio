@@ -1,5 +1,11 @@
-.education {
-
-
-
+.education__container {
+    /*background: green;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    width: 100%;
+    margin: 0 auto;
+    /*padding: -30px;*/
 }

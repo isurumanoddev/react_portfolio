@@ -6,6 +6,9 @@ function Portfolio() {
 
         <div className="portfolio container" id={"portfolio"}>
                <Title title={"Portfolio"} subTitle={"My Recent Work"}/>
+            <div className="portfolio__container">
+
+            </div>
         </div>
     );
 }

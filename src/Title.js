@@ -4,7 +4,7 @@ import "./Tile.css"
 
 function Title({title,subTitle}) {
     return (
-        <Fade bottom>
+        <Fade bottom cascade>
             <div className="title__container">
                 <div className={"title__line"}>
                     <div className="title__container__title__line"></div>
