@@ -1,45 +1,48 @@
 import React from 'react';
 import Title from "./Title";
 import "./Contact.css"
-import {Box} from "@mui/material";
+import {Button, FormControl, Input, InputLabel, TextField} from "@mui/material";
+import {Email, Phone, Send} from "@mui/icons-material";
+
 
 function Contact() {
     return (
         <div className="contact container" id={"contact"}>
             <Title title={"Contact Me"} subTitle={"Get in touch"}/>
 
-            <Box
-			component={"main"}
-			display={"flex"}
-			flexDirection={{ xs: "column", md: "row" }}
-			alignItems={"center"}
-			justifyContent={"center"}
-			minHeight={"calc(100vh - 175px)"}
-		>
-			<h1 className='paragraph'>Contact Me</h1>
-			<p className='paragraph'>Lets create something together!</p>
-			<form
+            <div className="contact__container">
+                <div className="contact__other">
+                    <div className="contact__other__option">
+                        <Email className={"contact__other__option__icon"} fontSize={"large"}/>
+                    </div>
+                    <div className="contact__other__option">
+                          <Phone className={"contact__other__option__icon"} fontSize={"large"}/>
+                    </div>
 
-				method='POST'
-				target='_blank'
-			>
-				<div>
-					<input type='text' placeholder='Name' name='name' required />
-				</div>
-				<div>
-					<input type='email' placeholder='Email' name='email' required />
-				</div>
-				<div>
-					<textarea placeholder='Message' name='message' required />
-				</div>
-				<div>
-					<button type='submit' >
-						{" "}
-						Send it!{" "}
-					</button>
-				</div>
-			</form>
-		</Box>
+
+                </div>
+
+                <form className="contact__form">
+                    <div className="contact__form__form__controll">
+                        <label htmlFor="exampleInputEmail1" className="contact__form__label">Enter Your Name</label>
+                        <input type="text" className="contact__form__input"/>
+                    </div>
+
+                    <div className="contact__form__form__controll">
+                        <label htmlFor="exampleInputEmail1" className="contact__form__label">Enter Your Email</label>
+                        <input type="email" className="contact__form__input"/>
+                    </div>
+
+                    <div className="contact__form__form__controll">
+                        <label htmlFor="exampleInputEmail1" className="contact__form__label">Message</label>
+                        <textarea rows={5} className="contact__form__input"/>
+                    </div>
+                    <Button size="large" className={"button"}> Contact Me <Send/></Button>
+
+                </form>
+            </div>
+
+
         </div>
     );
 }
