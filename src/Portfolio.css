@@ -1,3 +1,11 @@
 .portfolio {
+    display: flex;
+    gap: 1rem;
 
+}
+.portfolio__container {
+    overflow-y: scroll;
+}
+.portfolio__container::-webkit-scrollbar {
+    display: none;
 }

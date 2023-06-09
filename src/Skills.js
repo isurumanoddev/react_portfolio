@@ -26,9 +26,9 @@ function Skills() {
                         <Skill name={"Python"}/>
                     </Bounce>
                     <Bounce>
-                        <Skill name={"React"}/>
+                        <Skill name={"Firebase"}/>
                     </Bounce><Bounce>
-                        <Skill name={"Python"}/>
+                        <Skill name={"AWS(RDS/S3)"}/>
                     </Bounce>
                     <Bounce>
                         <Skill name={"React"}/>
