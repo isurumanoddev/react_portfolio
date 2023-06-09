@@ -71,7 +71,7 @@ function Banner() {
 
 
                     <div className="banner__container__buttons">
-                        <Button className="button ">Reach out to me <Send
+                        <Button href={"contact"} className="button ">Reach out to me <Send
                             fontSize={"small"}/></Button>
                         <Button className="button " onClick={downloadCV}>Download Cv <Download
                             fontSize={"small"}/></Button>
