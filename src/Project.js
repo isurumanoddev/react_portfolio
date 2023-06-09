@@ -31,8 +31,8 @@ function Project() {
 
                         </div>
                         <div className="project__container__info__buttons">
-                            <Button className="button buttons__github">Github <GitHub/></Button>
-                            <Button className="button buttons__live">Live <Web/></Button>
+                            <Button className="button button2">Github <GitHub/></Button>
+                            <Button className="button button2">Live <Web/></Button>
 
                         </div>
 

@@ -61,27 +61,31 @@
 }
 
 .banner__container__subtitle {
-    font-size: 30px;
+    font-size: 20px;
     color: var(--color-primary);
+    letter-spacing: 5px!important;
 
 
 }
 
 .banner__container__title {
-    font-size: 90px;
+    font-size: 65px;
     font-weight: 700;
 
     font-family: Sora, "serif";
+    letter-spacing: 10px !important;
 
 
     margin: 0 0;
+
 }
 
 .banner__container__title__2 {
-    font-size: 55px;
+    font-size: 48px;
     /*font-weight: 600;*/
-    margin-bottom: 10px;
+    margin-bottom: 13px;
     opacity: 0.9;
+    letter-spacing: 6px;
 }
 
 .banner__container__title__description {
@@ -91,7 +95,7 @@
     opacity: 0.8;
     line-height: 1.5;
     width: 50%;
-    /*max-width: 400px;*/
+
 }
 
 .banner__container__title__description__colored {
@@ -102,6 +106,7 @@
 
 .banner__container__buttons {
     display: flex;
+    gap: 10px;
 
 
 }

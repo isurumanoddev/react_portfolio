@@ -1,10 +1,14 @@
 import React from 'react';
 import "./Footer.css"
 import Title from "./Title";
+
 function Footer() {
     return (
         <div className="footer">
-            <Title title={"Isuru Manod"} subTitle={"Fullstack Developer"}/>
+            <div className="footer__container">
+
+                <a href={"https://github.com/isurumanoddev"} className="footer__name">Designed & Built by Isuru Senanayake .</a>
+            </div>
         </div>
     );
 }
