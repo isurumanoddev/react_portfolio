@@ -12,7 +12,7 @@ function Project() {
                          className="project__container__image"/>
                 </div>
                 <div className="project__container__info">
-                    <div className="project__container__info__title">thirdweb</div>
+                    <div className="project__container__info__title">Thirdweb</div>
                     <div className="project__container__info__des">Build web3 apps easily with thirdweb's powerful SDKs,
                         audited smart contracts, and developer tools—for Ethereum, Polygon, Solana, & more.
                     </div>

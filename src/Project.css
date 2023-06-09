@@ -9,8 +9,8 @@
 .project__container {
     display: grid;
 
-    gap: 24px;
-    grid-template-columns: 1.4fr 2fr;
+    gap: 30px;
+    grid-template-columns: 1.5fr 2fr;
     /*align-items: center;*/
     /*place-items: center;*/
 }
@@ -34,8 +34,10 @@
 
 .project__container__info__title {
     font-size: 30px;
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 12px;
+    color: var(--color-primary);
+    opacity: 0.8;
 }
 
 .project__container__info__des {

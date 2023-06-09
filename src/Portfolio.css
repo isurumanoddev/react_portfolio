@@ -4,8 +4,9 @@
 
 }
 .portfolio__container {
-    overflow-y: scroll;
-}
-.portfolio__container::-webkit-scrollbar {
-    display: none;
+    /*width: 70%;*/
+    /*margin: 0 auto;*/
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
