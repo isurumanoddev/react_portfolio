@@ -43,12 +43,12 @@ function Banner() {
 
             <div className="banner__container">
                 <div className="banner__container__info">
-                    <Zoom right cascade>
+
                         <div className="banner__container__subtitle">hello, my name is</div>
-                    </Zoom>
-                    <Zoom right cascade>
+
+
                         <div className="banner__container__title">Isuru Senanayake</div>
-                    </Zoom>
+
 
                     <div className="banner__container__title__2"><Typed
                         strings={[
@@ -61,22 +61,22 @@ function Banner() {
                         loop
                     /></div>
 
-                    <Zoom right cascade><p className="banner__container__title__description">I am a highly motivated and
+                  <p className="banner__container__title__description">I am a highly motivated and
                         skilled<strong className="banner__container__title__description__colored"> Software Engineering
                             Student </strong> currently pursuing my BSc in Software Engineering. .I have experience
                         working with a variety of programming languages and frameworks
-                    </p></Zoom>
+                    </p>
 
                 </div>
 
-                <Zoom right cascade>
+
                     <div className="banner__container__buttons">
                         <Button className="button ">Reach out to me <Send
                             fontSize={"small"}/></Button>
                         <Button className="button " onClick={downloadCV}>Download Cv <Download
                             fontSize={"small"}/></Button>
                     </div>
-                </Zoom>
+
 
                 <Zoom bottom cascade>
                     <div className="home__social">
@@ -121,7 +121,7 @@ function Banner() {
                         },
                     }, particles: {
                         color: {
-                            value: "#99e2e6",
+                            value: "#64FFDA",
                         },
 
                         links: {
@@ -155,3 +155,6 @@ function Banner() {
 
 export default Banner;
 
+// #64FFDA
+
+          // value: "#99e2e6",

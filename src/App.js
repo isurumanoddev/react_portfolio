@@ -11,6 +11,7 @@ import Skills from "./Skills";
 function App() {
     return (
         <div className="app">
+
             <Header/>
             <Banner/>
             <About/>
@@ -27,3 +28,5 @@ function App() {
 }
 
 export default App;
+
+
