@@ -1,0 +1,36 @@
+.scroll {
+    background: transparent;
+
+
+    right: 40px;
+     position: fixed;
+
+
+   bottom: 50px;
+
+
+   z-index: 1;
+
+
+}
+
+
+.scroll__button {
+    color: var(--color-primary) !important;
+    backdrop-filter: blur(30px);
+    background: rgba(100,255,218,0.01)!important;
+
+    transition: all 0.2s;
+
+    padding: 6px!important;
+
+}
+
+.arrow:hover {
+    color: var(--font-color) !important;
+
+}
+.arrow {
+     color: var(--color-primary) !important;
+    font-size: 3rem!important;
+}

@@ -31,7 +31,7 @@ function About() {
 
                     <div className="about__me">
                         <div className="about__me-image">
-                            <img alt="me"/>
+                            <img src={"https://drive.google.com/file/d/1RMnuJNKI16H_jmtSjCJbjmzv1dpbNl13/view?usp=sharing"} alt="me"/>
                         </div>
                     </div>
                     <div className="about__content">

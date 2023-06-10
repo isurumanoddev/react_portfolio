@@ -7,8 +7,12 @@ import Portfolio from "./Portfolio";
 import Footer from "./Footer";
 import Contact from "./Contact";
 import Skills from "./Skills";
+import Scroll from "./Scroll";
+
 
 function App() {
+
+
     return (
         <div className="app">
 
@@ -20,7 +24,9 @@ function App() {
 
             <Portfolio/>
             <Contact/>
+            <Scroll/>
             <Footer/>
+
 
 
         </div>

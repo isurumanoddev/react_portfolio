@@ -4,21 +4,17 @@ import {GitHub, Web} from "@mui/icons-material";
 import "./Project.css"
 import {Fade} from "react-reveal";
 
-function Project() {
+function Project({name,description,github,image}) {
     return (
         <Fade cascade bottom>
             <div className="project">
                 <div className="project__container">
                     <div className="project__container__image__container">
-                        <img src="https://www.avneesh.tech/_next/image?url=%2Fprojects%2Fthirdweb.png&w=640&q=75" alt=""
-                             className="project__container__image"/>
+                        <img src={"https://drive.google.com/file/d/1RMnuJNKI16H_jmtSjCJbjmzv1dpbNl13/view?usp=sharing"} className="project__container__image"/>
                     </div>
                     <div className="project__container__info">
-                        <div className="project__container__info__title">Thirdweb</div>
-                        <div className="project__container__info__des">Build web3 apps easily with thirdweb's powerful
-                            SDKs,
-                            audited smart contracts, and developer tools—for Ethereum, Polygon, Solana, & more.
-                        </div>
+                        <div className="project__container__info__title">{name}</div>
+                        <div className="project__container__info__des">{description}</div>
                         <div className="project__container__info__techs__container">
                             <p className="project____techs">Javascript</p>
                             <p className="project____techs">Python</p>
@@ -31,7 +27,7 @@ function Project() {
 
                         </div>
                         <div className="project__container__info__buttons">
-                            <Button className="button button2">Github <GitHub/></Button>
+                            <Button href={github} className="button button2">Github <GitHub/></Button>
                             <Button className="button button2">Live <Web/></Button>
 
                         </div>
