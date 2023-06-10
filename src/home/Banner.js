@@ -71,7 +71,7 @@ function Banner() {
 
 
                     <div className="banner__container__buttons">
-                        <Button href={"contact"} className="button ">Reach out to me <Send
+                        <Button href="#contact" className="button ">Reach out to me <Send
                             fontSize={"small"}/></Button>
                         <Button className="button " onClick={downloadCV}>Download Cv <Download
                             fontSize={"small"}/></Button>
@@ -80,13 +80,13 @@ function Banner() {
 
                 <Zoom bottom cascade>
                     <div className="home__social">
-                        <IconButton href={"https://github.com/isurumanoddev"} className={"home__social__icons"}>
+                        <IconButton target="_blank" href={"https://github.com/isurumanoddev"} className={"home__social__icons"}>
                             <GitHub fontSize={"large"}/>
                         </IconButton>
-                        <IconButton className={"home__social__icons"}>
+                        <IconButton href={"https://github.com/isurumanoddev"} target="_blank" className={"home__social__icons"}>
                             <LinkedIn fontSize={"large"}/>
                         </IconButton>
-                        <IconButton className={"home__social__icons"}>
+                        <IconButton href={"https://github.com/isurumanoddev"} target="_blank" className={"home__social__icons"}>
                             <Twitter fontSize={"large"}/>
                         </IconButton>
 

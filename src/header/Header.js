@@ -45,7 +45,7 @@ function Header() {
                     </li>
                     <li className={activeLink === "contact" ? "header__nav-item active " : "header__nav-item"}
                         onClick={() => updateLink("contact")}>
-                        <a href="#contact">Contact</a>
+                               <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>

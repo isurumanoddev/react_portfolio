@@ -1,5 +1,5 @@
 import React from 'react';
-import "./About.css"
+import "../styles/About.css"
 import {Slide, Fade} from 'react-reveal';
 import Title from "./Title";
 import {Button} from "@mui/material";
@@ -31,28 +31,30 @@ function About() {
 
                     <div className="about__me">
                         <div className="about__me-image">
-                            <img src={"https://drive.google.com/file/d/1RMnuJNKI16H_jmtSjCJbjmzv1dpbNl13/view?usp=sharing"} alt="me"/>
+                            <img className="about__me-image__" src={"https://firebasestorage.googleapis.com/v0/b/isuru-manod.appspot.com/o/photo_2023-06-10_14-06-44.jpg?alt=media&token=38ba270a-b0dd-4f31-b7e2-5f1d343cfec9"} alt="me"/>
                         </div>
                     </div>
                     <div className="about__content">
                         <div className="about__cards">
                             <article className="about__card">
                                 <MilitaryTech fontSize={"large"} className="about__icon"/>
-                                <h5>Experience</h5>
-                                <small>1 year</small>
+                                <h5>2+ Years</h5>
+                                <small>Development Experience</small>
                             </article>
                             <article className="about__card">
                                 <WorkOutline fontSize={"large"} className="about__icon"/>
                                 <h5>Projects</h5>
-                                <small>20+ Completed Projects</small>
+                                <small>10+ Completed Projects</small>
                             </article>
                         </div>
-                        <p>I’ve spent the last several months in a remote environment, working with HTML, CSS,
-                            JavaScript, building everything from landing pages to APIs. My experience as a teacher
-                            in an international school helped me collaborate with fellow developers from all over
-                            the world. Additionally, working with kids isn’t an easy task, however, it has helped me
-                            become efficient, productive, and fast even in a very stressful environment, which is an
-                            important skill in the tech industry.</p>
+                        <p>Highly motivated, open-mined and detail-oriented undergraduate software engineer. An
+                            adaptable quick learner, a strong communicator and team player with a strong foundation in
+                            computer science principles and passion for problem-solving to make a meaningful
+                            contribution at a forward-thinking company. Skilled in developing efficient and intuitive
+                            solutions to complex problems, with experience in a variety of programming languages such as
+                            Python , Javascript and technologies such as React, Django, NoSQL databases. Seeking to
+                            leverage my skills and knowledge to contribute to the success of a dynamic software
+                            development team</p>
                         <Button onClick={downloadCV} className="button">Download CV <Download/> </Button>
                     </div>
 
@@ -62,7 +64,7 @@ function About() {
             </Fade>
         </div>
 
-);
+    );
 }
 
 export default About;

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {ArrowUpward, KeyboardArrowUp} from "@mui/icons-material";
 import {Button, IconButton} from "@mui/material";
-import "./Scroll.css"
+import "../styles/Scroll.css"
 
 function Scroll() {
 

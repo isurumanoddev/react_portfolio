@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react';
-import "./Portfolio.css"
+import "../styles/Portfolio.css"
 import Title from "./Title";
 import Project from "./Project";
 import {collection, getDocs} from "firebase/firestore";
-import {db} from "./firebase";
+import {db} from "../firebase";
 
 
 function Portfolio() {
@@ -34,10 +34,16 @@ function Portfolio() {
             <Title title={"Portfolio"} subTitle={"My Recent Work"}/>
             <div className="portfolio__container">
                 {projects?.map(project => (
-                    <Project name={project.data.name} description={project.data.description} github={project.data.github}/>
+                    <Project
+                        name={project.data.name}
+                        description={project.data.description}
+                        image={project.data.image}
+                        github={project.data.github}
+                        live={project.data.live}
+                    />
 
                 ))}
-                <Project/>
+
 
 
 

@@ -6,27 +6,37 @@
 .about__container {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 4rem;
+    gap: 2rem;
 
     height: max-content;
 }
 
 .about__me {
-    width: 100%;
+
+
+    width: 75%;
+    height: 60%;
+    margin: 0 auto;
     aspect-ratio: 1/1;
-    border-radius: 2rem;
-    background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
+    border-radius: 50%;
+    background: linear-gradient( transparent, var(--color-primary), transparent);
     display: grid;
     place-items: center;
 }
 
 .about__me-image {
-    border-radius: 2rem;
+    align-self: center;
+    justify-self: center;
+    border-radius: 50%;
     overflow: hidden;
-    transform: rotate(10deg);
+    /*transform: rotate(10deg);*/
     transition: 0.3s ease-in;
 }
-
+.about__me-image__ {
+    width: 100%;
+    backdrop-filter: blur(8px);
+    object-fit: cover;
+}
 .about__me-image:hover {
     transform: rotate(0);
 }
