@@ -25,7 +25,7 @@ function Portfolio() {
             })
     }, [])
 
-    console.log("projects ",projects[0]?.data.image)
+    console.log("projects ",projects[1]?.data.tech)
 
 
     return (
@@ -40,6 +40,7 @@ function Portfolio() {
                         image={project.data.image}
                         github={project.data.github}
                         live={project.data.live}
+                        tech={project.data.tech}
                     />
 
                 ))}

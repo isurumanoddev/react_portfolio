@@ -80,4 +80,12 @@
     font-size: 20px;
 
 }
+    .title__container__title__line {
+
+    width: 15vw;
+    height: 1px;
+    background-color: rgba(153, 226, 230, 0.5);;
+
+    margin: 0 auto;
+}
 }

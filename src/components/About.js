@@ -8,7 +8,7 @@ import {Download, MilitaryTech, WorkOutline} from "@mui/icons-material";
 
 function About() {
     const downloadCV = () => {
-        const downloadUrl = 'https://drive.google.com/uc?export=download&id=11FzI5kMjslizgvJmRgdGuonbMGF-_UBq'; // Replace with the actual Google Drive file download link
+        const downloadUrl = 'https://drive.google.com/file/d/1flr9WH7MANldPQxajPZ_NpKwEGe09McJ/view?usp=drive_link'; // Replace with the actual Google Drive file download link
 
         // Create a temporary anchor element
         const link = document.createElement('a');

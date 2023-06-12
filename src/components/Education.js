@@ -10,6 +10,7 @@ function Education() {
         <div className="education container" id={"education"} >
              <Title title={"Education"} subTitle={"My Journey"}/>
 
+
             <div className="education__container">
                 <College
                     name={"Bsc Software Engineering ( On Reading) May 2023- May 2024"}

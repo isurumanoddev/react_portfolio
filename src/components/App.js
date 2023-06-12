@@ -23,7 +23,7 @@ function App() {
 
 
             <Portfolio/>
-              <Education/>
+
             <Contact/>
 
             <Scroll/>

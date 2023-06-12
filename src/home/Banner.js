@@ -24,7 +24,7 @@ function Banner() {
         await console.log(container);
     }, []);
     const downloadCV = () => {
-        const downloadUrl = 'https://drive.google.com/uc?export=download&id=11FzI5kMjslizgvJmRgdGuonbMGF-_UBq'; // Replace with the actual Google Drive file download link
+        const downloadUrl = 'https://drive.google.com/file/d/1flr9WH7MANldPQxajPZ_NpKwEGe09McJ/view?usp=drive_link'; // Replace with the actual Google Drive file download link
 
         // Create a temporary anchor element
         const link = document.createElement('a');
@@ -62,8 +62,8 @@ function Banner() {
                     /></div>
 
                   <p className="banner__container__title__description">I am a highly motivated and
-                        skilled<strong className="banner__container__title__description__colored"> Software Engineering
-                            Student </strong> currently pursuing my BSc in Software Engineering. .I have experience
+                        skilled<strong className="banner__container__title__description__colored"> Fullstack Developer
+                  </strong> currently pursuing <strong className="banner__container__title__description__colored"> BSc in Software Engineering .</strong>I have experience
                         working with a variety of programming languages and frameworks
                     </p>
 
@@ -73,7 +73,7 @@ function Banner() {
                     <div className="banner__container__buttons">
                         <Button href="#contact" className="button ">Reach out to me <Send
                             fontSize={"small"}/></Button>
-                        <Button className="button " onClick={downloadCV}>Download Cv <Download
+                        <Button id={"download__btn"} className="button " onClick={downloadCV}>Download Cv <Download
                             fontSize={"small"}/></Button>
                     </div>
 

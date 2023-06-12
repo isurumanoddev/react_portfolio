@@ -5,12 +5,16 @@
     top: 0;
     width: 100%;
     background: transparent;
-    display: flex !important;
-    gap: 8rem;
-    justify-content: end;
-    /*padding-right: 200px;*/
+      display: flex !important;
 
     align-items: center;
+    justify-content: flex-end;
+
+    gap: 8rem;
+
+    /*padding-right: 200px;*/
+
+
 
 }
 
@@ -33,12 +37,10 @@ a {
 }
 
 .header__nav {
-    display: flex;
-}
 
-.header__nav {
-    display: flex;
-    justify-content: flex-end;
+      display: grid !important;
+    grid-template-columns: 1fr;
+    place-items: end;
 }
 
 
@@ -89,15 +91,12 @@ a {
 
 @media screen and (max-width: 576px) {
     .header {
-        z-index: 10;
-        height: 65px;
+
+
         position: fixed;
+        justify-content: center;
 
-        top: 0;
-        width: 100%;
 
-        /* From https://css.glass */
-        /*background: red;*/
         background: rgba(10, 16, 41, 0.44);
         border-radius: 8px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -105,39 +104,26 @@ a {
         -webkit-backdrop-filter: blur(5.5px);
 
         gap: 4rem;
-        justify-content: center;
-        align-items: center;
-        padding: 0 30px;
+
+
 
     }
     .header__nav {
     display: flex;
     justify-content: center;
 }
-
-
-
-}
-
-@media screen and (max-width: 425px) {
-      .header {
-
-        gap: 3rem;
-
-        padding: 0 5px;
-
-    }
-
     .header__nav-item {
-
-    margin: 0 4px!important;
-    font-size: 15px;
-
+    cursor: pointer;
+    margin: 0 8px;
+    font-size: 13px;
+    padding: 8px 0;
+    font-family: Sora, "serif";
+    letter-spacing: 2px!important;
 
 
 }
 
 
-}
 
+}
 

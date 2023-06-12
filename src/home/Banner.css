@@ -120,9 +120,10 @@
 @media screen and (max-width: 768px) {
     .banner__container {
 
-    padding: 0 20px;
+    padding: 0 0;
 
-    max-width: 100%;
+    width: 90%;
+        margin: 0 auto;
 
 
 
@@ -165,17 +166,35 @@
 
 @media screen and (max-width: 576px) {
 
+    .banner__container {
+        background-color: transparent;
+    padding: 0 0;
+    display: grid;
+    place-items: flex-start;
+    width: 74%;
+    margin: 0 auto;
+    flex-direction: column;
+
+
+
+
+    gap: 20px;
+
+    /*background: red;*/
+}
+
+
 
     .banner__container__info {
         margin-top: 100px;
     }
 
     .banner__container__subtitle {
-        font-size: 25px;
+        font-size: 16px;
     }
 
     .banner__container__title {
-        font-size: 60px;
+        font-size: 40px;
     }
 
     .banner__container__title__2 {
@@ -192,6 +211,53 @@
 
     .home__social {
         display: none;
+    }
+    /*.banner__container__buttons {*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*}*/
+    #download__btn {
+        display: none!important;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+
+
+.banner__container__subtitle {
+    font-size: 18px;
+
+    letter-spacing: 3px!important;
+
+
+}
+
+
+
+    .banner__container__title {
+        font-size: 36px;
+        letter-spacing: 5px!important;
+    }
+
+    .banner__container__title__2 {
+        font-size: 28px;
+        letter-spacing: 5px!important;
+
+    }
+
+
+
+    .home__social {
+        display: none;
+    }
+    /*.banner__container__buttons {*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*}*/
+    #download__btn {
+        display: none!important;
     }
 
 }

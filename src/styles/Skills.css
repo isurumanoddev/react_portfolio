@@ -12,18 +12,12 @@
     color: var(--font-color);
     border-radius: 1rem;
 
-    width: 80%;
+    /*width: 60%;*/
     margin: 0 auto;
     padding: 3rem;
 
 }
 
-.skills__container__row {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    flex-wrap: wrap;
-    gap: 1.8rem;
-}
 
 .skills__container__row {
     display: grid;
@@ -54,7 +48,7 @@
     .skills__container {
 
 
-        width: 90%;
+        width: 100%;
          padding: 1rem;
 
 

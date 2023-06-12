@@ -8,9 +8,9 @@
 .contact__container {
     width: 100%;
     display: grid;
-    grid-template-columns: 1.5fr 2fr;
+    grid-template-columns: 1.2fr 2fr;
     margin: 0 auto;
-    gap: 1rem;
+
 
 
 }
@@ -26,6 +26,7 @@
 
 
 }
+
 .contact__other__option {
     display: flex;
     flex-direction: column;
@@ -33,35 +34,40 @@
     justify-content: center;
     text-align: center;
     gap: 1rem;
-    border: 1px solid rgb(100,255,218,0.4);
+    border: 1px solid rgb(100, 255, 218, 0.4);
     padding: 2rem;
-       border-radius: 8px;
-    min-width: 330px;
+    border-radius: 8px;
+    /*min-width: 330px;*/
+    flex-wrap: wrap;
 
 }
+
 .contact__other__option__icon {
     color: var(--color-primary);
 
 }
+
 .contact-title {
     letter-spacing: 2px;
     margin-bottom: 8px;
 }
+
 .contact-subtitle {
     letter-spacing: 2px;
 }
 
 
 .contact__form {
-    width: 100%;
-     /*border: 1px solid rgb(100,255,218,0.4);*/
+    width: 90%;
+    /*border: 1px solid rgb(100,255,218,0.4);*/
     display: flex;
     flex-direction: column;
 
-    padding: 1rem;
+    /*padding: 1rem;*/
     /*background: rgba(100,255,218,0.3);*/
     backdrop-filter: blur(20px);
     gap: 1rem;
+    margin: auto;
 }
 
 
@@ -77,6 +83,7 @@
     font-size: 18px;
     letter-spacing: 2.5px;
 }
+
 .contact__form__label__primary {
 
     font-weight: 500;
@@ -87,6 +94,7 @@
     color: var(--color-primary);
 
 }
+
 .contact__form__input {
     width: 100%;
     padding: 10px;
@@ -101,8 +109,7 @@
 }
 
 
-
-.contact__form__input:focus  {
+.contact__form__input:focus {
     outline: none;
     border-color: var(--color-primary);
 }
@@ -117,10 +124,24 @@
 /*    background-color: #1ed760;*/
 /*}*/
 .alert {
-    background: var(--color-primary)!important;
-    letter-spacing: 2px!important;
-    font-size: 20px!important;
+    background: var(--color-primary) !important;
+    letter-spacing: 2px !important;
+    font-size: 20px !important;
 
 
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .contact__container {
+        /*width: 90%;*/
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1rem;
+        margin: 0 auto !important;
+
+
+    }
 
 }

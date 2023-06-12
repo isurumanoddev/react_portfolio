@@ -44,3 +44,22 @@
 .skills__container__row__bar__info__image-title:hover {
 
 }
+
+
+
+
+@media screen and (max-width: 576px) {
+   .skills__container__row__bar__info__image-title {
+    display: none;
+}
+
+.skills__container__row__bar {
+
+    padding: 0;
+    border-radius: 50%;
+    /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);*/
+    /*background: rgba(0, 0, 22, 0.9);*/
+
+}
+
+}

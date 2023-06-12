@@ -119,7 +119,7 @@
     }
 
     .about__cards {
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 1fr 1fr;
         gap: 1rem;
     }
     .about__card {
@@ -133,4 +133,14 @@
     .about__content p {
         margin: 1.5rem 0;
     }
+}
+@media screen and (max-width: 576px) {
+    .about__card {
+
+    padding: 0.5rem;
+
+
+
+}
+
 }

@@ -4,7 +4,7 @@ import {GitHub, Web} from "@mui/icons-material";
 import "../styles/Project.css"
 import {Fade} from "react-reveal";
 
-function Project({name,description,github,image,live}) {
+function Project({name,description,github,image,live,tech}) {
     return (
         <Fade cascade bottom>
             <div className="project">
@@ -16,13 +16,13 @@ function Project({name,description,github,image,live}) {
                         <div className="project__container__info__title">{name}</div>
                         <div className="project__container__info__des">{description}</div>
                         <div className="project__container__info__techs__container">
-                            {/*<p className="project____techs">Javascript</p>*/}
-                            {/*<p className="project____techs">Python</p>*/}
-                            {/*<p className="project____techs">Firebase</p><p className="project____techs">Javascript</p>*/}
-                            {/*<p className="project____techs">Python</p>*/}
-                            {/*<p className="project____techs">Firebase</p><p className="project____techs">Javascript</p>*/}
-                            {/*<p className="project____techs">Python</p>*/}
-                            {/*<p className="project____techs">Firebase</p><p className="project____techs">Javascript</p>*/}
+                            {
+                                tech?.map(item => (
+                                     <p className="project____techs">{item}</p>
+                                ))
+                            }
+
+
 
 
                         </div>
