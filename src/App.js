@@ -1,13 +1,12 @@
 import './styles/App.css';
 import Banner from "./home/Banner";
 import About from "./components/About";
-import Header from "./header/Header";
 
-import Portfolio from "./components/Portfolio";
-import Footer from "./components/Footer";
+
+
 import Contact from "./Contact";
 import Skills from "./components/Skills";
-import Scroll from "./components/Scroll";
+
 
 import Projects from "./comp/Projects";
 
@@ -16,21 +15,24 @@ function App() {
 
 
     return (
-        <div className="app">
-
-            <Header/>
-           <Projects/>
-            <Banner/>
-            <About/>
-            <Skills/>
-
-
-            <Portfolio/>
-
-            <Contact/>
-
-            <Scroll/>
-            <Footer/>
+        <div
+            className={"h-screen  snap-y scroll-smooth snap-mandatory overflow-x-hidden overflow-y-scroll z-0 scrollbar-track-gray-400/20 scrollbar-thumb-red-700 scrollbar-thin"}>
+            {/*<Header/>*/}
+            <section id={"hero"} className={""}>
+                <Banner/>
+            </section>
+            <section id={"about"} className={""}>
+                <About/>
+            </section>
+            <section id={"skills"} className={""}>
+                <Skills   />
+            </section>
+            <section id={"projects"} className={""}>
+                <Projects  />
+            </section>
+            <section id={"contact"} className={""}>
+                <Contact/>
+            </section>
 
 
 
