@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities.css';
 
 /*font-weight: bold;*/
 
@@ -10,6 +13,7 @@
     /*color: #64FFDA*/
 
 }
+
 
 :root {
     --color-bg: rgb(10, 16, 41);
