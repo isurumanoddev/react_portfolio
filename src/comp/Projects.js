@@ -44,6 +44,7 @@ function Projects() {
                 {
                     projects?.map((project) => (
                         <ProjectCard
+                            key={project.data.id}
                             name={project.data.name}
                             description={project.data.description}
                             image={project.data.image}

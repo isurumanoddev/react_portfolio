@@ -65,7 +65,7 @@ function Skills() {
                 {
 
                     skills.map(skills => (
-                            <Skill name={skills.data.name} img={skills.data.image}/>
+                            <Skill key={skills.data.id} name={skills.data.name} img={skills.data.image}/>
                         ))
                 }
 

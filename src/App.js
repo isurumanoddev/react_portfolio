@@ -4,12 +4,13 @@ import About from "./components/About";
 
 
 
-import Contact from "./Contact";
+
 import Skills from "./components/Skills";
 
 
 import Projects from "./comp/Projects";
 import Header from "./header/Header";
+import Contact from "./components/Contact";
 
 
 function App() {
