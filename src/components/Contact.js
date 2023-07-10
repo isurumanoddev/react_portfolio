@@ -72,7 +72,7 @@ function Contact() {
                     </div>
                 </div>
 
-                <form oref={form} onSubmit={sendEmail} className={"flex flex-col  space-y-3  "}>
+                <form ref={form} onSubmit={sendEmail} className={"flex flex-col  space-y-3  "}>
                     <div className={"flex space-x-2 w-full"}>
                         <input name={"name"} onFocus={() => handleInputFocus("name")} placeholder={"Name"} className={"contactInput"} type="text"/>
                         <input name={"email"} onFocus={() => handleInputFocus("email")}  placeholder={"Email"} className={"contactInput"} type="text"/>

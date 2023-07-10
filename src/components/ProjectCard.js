@@ -1,8 +1,8 @@
-'use client'
+
 import {motion} from "framer-motion"
 import {Button} from "@mui/material";
 import {Article, GitHub} from "@mui/icons-material";
-import project from "../components/Project";
+
 
 
 function ProjectCard({name, description, live, github, image, tech}) {

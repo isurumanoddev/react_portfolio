@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
-import "../styles/Skills.css"
-import Title from "./Title";
+
+
 import Skill from "./Skill";
 import {motion} from "framer-motion"
 import {collection, getDocs} from "firebase/firestore";

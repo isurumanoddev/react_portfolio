@@ -1,7 +1,7 @@
 import {motion} from "framer-motion"
 
 import React, {useEffect, useState} from 'react';
-import "../styles/Portfolio.css"
+
 
 import ProjectCard from "./ProjectCard";
 import {collection, getDocs} from "firebase/firestore";
