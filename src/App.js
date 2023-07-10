@@ -9,6 +9,7 @@ import Skills from "./components/Skills";
 
 
 import Projects from "./comp/Projects";
+import Header from "./header/Header";
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
     return (
         <div
             className={"h-screen  snap-y scroll-smooth snap-mandatory overflow-x-hidden overflow-y-scroll z-0 scrollbar-track-gray-400/20 scrollbar-thumb-red-700 scrollbar-thin"}>
-            {/*<Header/>*/}
+            <Header/>
             <section id={"hero"} className={""}>
                 <Banner/>
             </section>
