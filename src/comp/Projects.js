@@ -1,10 +1,31 @@
-
 import {motion} from "framer-motion"
-import React from "react";
+
+import React, {useEffect, useState} from 'react';
+import "../styles/Portfolio.css"
+
+import ProjectCard from "./ProjectCard";
+import {collection, getDocs} from "firebase/firestore";
+import {db} from "../firebase";
 
 
+function Projects() {
 
-function Projects({projects}) {
+    const [projects, setProjects] = useState([])
+
+    const projectCollection = collection(db, "projects")
+    // const roomDoc = doc(roomsCollection, roomId ? roomId : "");
+    // const messageCollection = collection(roomDoc, "messages")
+    // const messageDoc = doc(messageCollection);
+
+    useEffect(() => {
+        getDocs(projectCollection)
+            .then(snapshot => {
+                setProjects(snapshot.docs.map(doc => ({
+                    id: doc.id,
+                    data: doc.data()
+                })))
+            })
+    }, [])
 
 
     return (
@@ -21,15 +42,14 @@ function Projects({projects}) {
                 className={"w-full space-x-5 flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-track-gray-400/20 scrollbar-thumb-[#E76161] scrollbar-thin p-10 "}>
 
                 {
-                     projects?.map((project) => (
+                    projects?.map((project) => (
                         <ProjectCard
-                            key={project?._id}
-                            name={project?.title}
-                            description={project?.summary}
-                            image={project?.image}
-                            github={project?.github}
-                            live={project?.live}
-                            tech={project?.tech}/>
+                            name={project.data.name}
+                            description={project.data.description}
+                            image={project.data.image}
+                            github={project.data.github}
+                            live={project.data.live}
+                            tech={project.data.tech}/>
                     ))
                 }
             </div>

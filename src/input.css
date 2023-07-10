@@ -1,3 +1,156 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+
+
+@layer components {
+    .contactInput {
+        @apply focus:text-[#E76161]/80 hover:border-[#E76161]/60 backdrop-blur-md outline-none bg-slate-400/10 rounded-sm border-b-2 px-6 py-4  text-gray-300 placeholder-gray-500 transition-all w-full text-[14px] md:text-[16px] focus:border-[#E76161]
+    }
+}
+
+/*:root {*/
+/*  --foreground-rgb: 0, 0, 0;*/
+/*  --background-start-rgb: 214, 219, 220;*/
+/*  --background-end-rgb: 255, 255, 255;*/
+/*}*/
+
+
+
+/*body {*/
+/*  color: rgb(var(--foreground-rgb));*/
+/*  background: linear-gradient(*/
+/*      to bottom,*/
+/*      transparent,*/
+/*      rgb(var(--background-end-rgb))*/
+/*    )*/
+/*    rgb(var(--background-start-rgb));*/
+/*}*/
+:root {
+    --color-3: #76161;
+
+    --color-bg: rgb(10, 16, 41);
+    --color1: #131b30;
+    --color2: #131b30;
+
+    /*--color-primary: rgb(153, 226, 230);*/
+
+    /*--color-primary: rgb(100,255,218);*/
+    --color-primary: #64FFDA;
+    --font-color: rgb(210, 217, 244);
+
+
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+li,ul {
+    list-style: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--font-color);
+    background: var(--color-bg);
+
+
+    margin: 0;
+    font-family: 'Sora', sans-serif;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.button {
+    /*padding: 8px 20px!important;*/
+    backdrop-filter: blur(20px);
+    width: max-content !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    padding:17px 28px !important;
+    font-size: 13px !important;
+    color: #F33232FF !important;
+    background-color: transparent !important;
+
+    border-radius: 6px !important;
+
+    margin-right: 10px !important;
+    border: 1.5px solid #F33232FF !important;
+    transition: all 0.2s ease-in;
+    text-transform: none!important;
+    font-weight: 500;
+    letter-spacing: 3.5px!important;
+
+}
+
+.button:hover {
+    /*background-color: rgba(153, 226, 230, 0.2) !important;*/
+    color: #e35454 !important;
+     border: 1.5px solid #E35454FF!important;
+    transform: scale(1.01);
+
+}
+.contactInput {
+
+}
+.button2 {
+    /*padding: 8px 20px!important;*/
+    backdrop-filter: blur(20px);
+    width:100% !important;
+    display: flex !important;
+
+    align-items: center !important;
+    gap: 8px !important;
+    padding:17px 28px !important;
+    font-size: 17px !important;
+    color: var(--color-bg) !important;
+    background-color: #F33232FF !important;
+
+    border-radius: 6px !important;
+
+    margin-right: 10px !important;
+    border: 1.5px solid #F33232FF !important;
+    transition: all 0.2s ease-in;
+    text-transform: none!important;
+    font-weight: 600;
+    letter-spacing: 3.5px!important;
+
+}
+
+/*.button2:hover {*/
+/*    background-color: rgba(153, 226, 230, 0.2) !important;*/
+/*    color: white !important;*/
+
+/*}*/
+
+.button3 {
+    /*padding: 8px 20px!important;*/
+    backdrop-filter: blur(20px);
+    width: max-content !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    padding:8px 14px !important;
+    font-size: 13px !important;
+    color: #F33232FF !important;
+    background-color: transparent !important;
+
+    border-radius: 6px !important;
+
+
+    border: 1.5px solid #F33232FF !important;
+    transition: all 0.2s ease-in;
+    text-transform: none!important;
+    font-weight: 500;
+    letter-spacing: 2.5px!important;
+
+}
+
+/*.button3:hover {*/
+/*    background-color: rgba(153, 226, 230, 0.2) !important;*/
+/*    color: white !important;*/
+
+/*}*/

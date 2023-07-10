@@ -4,6 +4,7 @@ import {GitHub, Web} from "@mui/icons-material";
 import "../styles/Project.css"
 import {Fade} from "react-reveal";
 
+
 function Project({name,description,github,image,live,tech}) {
     return (
         <Fade cascade bottom>

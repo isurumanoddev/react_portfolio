@@ -19,7 +19,7 @@ function ProjectCard({name, description, live, github, image}) {
                     transition={{duration: 1.2}}
                     viewport={{once: false}}
                     className={"min-h-4/10 h-72 md:h-112 rounded-md  object-cover w-[300px] md:w-[350px] lg:w-[450px] p-1 "}
-                    src={image ?  urlFor(image).url() : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzSc0E_-ezcw1juku7x_q9rIVtGDEFGDsZnA&usqp=CAU" }
+                    src={image}
                 />
 
             <motion.div

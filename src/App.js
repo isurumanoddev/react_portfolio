@@ -8,7 +8,8 @@ import Footer from "./components/Footer";
 import Contact from "./Contact";
 import Skills from "./components/Skills";
 import Scroll from "./components/Scroll";
-import Tailwind from "./components/tailwind";
+
+import Projects from "./comp/Projects";
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
         <div className="app">
 
             <Header/>
-            <Tailwind/>
+           <Projects/>
             <Banner/>
             <About/>
             <Skills/>
